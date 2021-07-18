@@ -1,0 +1,5 @@
+name: UltimatePoop
+version: 1.0
+author: Squirrelcoding
+main: com.squirrelcoding.ultimatepoop.ultimatepoop
+api-version: 1.17
