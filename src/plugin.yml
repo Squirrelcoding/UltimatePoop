@@ -3,3 +3,8 @@ version: 1.0
 author: Squirrelcoding
 main: com.squirrelcoding.ultimatepoop.ultimatepoop
 api-version: 1.17
+commands:
+  lore:
+    description: Gives you lore on the item...
+    usage: /<command>
+    aliases: [uplore,ultimatepooplore]

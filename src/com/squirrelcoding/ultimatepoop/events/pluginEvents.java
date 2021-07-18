@@ -12,6 +12,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+
+import java.util.Collections;
 import java.util.Random;
 
 
@@ -35,9 +37,9 @@ public class pluginEvents implements Listener {
                 event.getDrops().clear();
                 event.getDrops().add(drop);
                 for(Player p : Bukkit.getOnlinePlayers()) {
+                    Bukkit.broadcastMessage(ChatColor.RED + playerName + " has obtained the ultimate poop. Beware...");
                     p.playSound(p.getLocation(), Sound.BLOCK_END_PORTAL_SPAWN, 1, 0);
                 }
-                player.sendMessage(ChatColor.RED + playerName + " has obtained the ultimate poop. Beware...");
             }
         }
     }
