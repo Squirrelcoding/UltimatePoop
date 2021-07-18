@@ -30,8 +30,8 @@ public class pluginEvents implements Listener {
         EntityType entity = event.getEntityType();
         if (entity == EntityType.PIG) {
             Random rand = new Random();
-            int chance = rand.nextInt(10000) + 1;
-            if (chance == 3) {
+            int chance = rand.nextInt(3) + 1;
+            if (chance == 2) {
                 Player player = event.getEntity().getKiller();
                 String playerName = player.getName();
                 event.getDrops().clear();
